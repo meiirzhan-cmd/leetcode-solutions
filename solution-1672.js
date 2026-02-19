@@ -21,3 +21,10 @@ console.log(
         [3, 5, 4, 6, 8],
     ]),
 ); // Expected: [0, 1]
+
+const maximumWealth2 = function(accounts) {
+  
+    let result=accounts.map(access=>access.reduce((total,money)=>total+money,0))
+        let wealth=Math.max(...result)
+        return wealth
+};
